@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+}
+.container{
+    display:flex;
+    text-align: center;
+    align-content: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+.container5{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: flex-start;
+    margin: auto;
+}
+.color-red{
+    color: red;
+}
+.color-blue{
+    color: blue;
+}
+.color-gren{
+    color:green
+}
+.color-orange{
+    color: orange;
+}
+.color-brown{
+    color:brown
+}
+.color-black{
+    color:black;
+}
+
+.container div{
+    width: 120px;
+}
+.color-faint-blue{
+    color: aqua;
+}
+.item{
+    padding: 8px;
+    border-bottom: 3px solid transparent;
+}
+.container div.item:hover{
+    border-color: unset;
+}
+
+.item2{
+    padding: 8px; 
+    border-bottom: 3px solid transparent;
+}
+.container3 div.item:hover{
+    border-color: unset;
+}
+
+.container2{
+    display:flex;
+    text-align: center;
+    height: 80px;
+    background-color: rgb(77, 201, 77);
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.color-white{
+    color: white    ;
+}
+.contaner3{
+    display: flex;
+}
+.contaner3 div{
+    width: 30%;
+}
+.navigacao_tabs{
+    color: white;
+    opacity: 0.8;
+}
+.navigacao_tabs:hover{
+    opacity: 1;
+}
+.container4{
+    display:flex;
+    text-align: center;
+    height: 60px;
+    background-color: rgb(77, 201, 77);
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+}
+.container4 div{
+    width: 100px;
+}
+.container6{
+    display: flex;
+    justify-content: flex-start;
+}
+.container6 div:hover {
+    color: blue;
+    border: none;
+}
+
+.container7{
+    color:black
+}
+
+.fonteGeral{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.fonte{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.fonte2 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.fonte3 {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.barra-buscar{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.barra-buscar input{
+    background-color: transparent;
+    border: none;
+    height: 26px;
+}
+.barra-bsucar input[type=search]::placeholder{
+    color: white;
+    font-family: sans-serif;
+}
+.barra-buscar input[type=search]:focus-visible{
+    outline: none;
+}
+.barra-buscar form {
+    background-color: green;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tabela{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    font-family: sans-serif;
+}
+
+.tabela1{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.tabela2{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    font-family: sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+th, td {
+    border-bottom: 1px solid lightgray;
+    padding: 8px; 
+}
+
+.tabela tbody tr td:nth-child(odd):not(:first-child){
+    background-color: #cbcbcb97;
+}
+
+.teans {
+    text-align: left;
+    border-right: 1px solid lightgray;
+}
+
+.teans2 {
+    text-align: left;
+    border-top: 1px solid lightgray;
+}
+
+.teans3 {
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.fonte-th{
+    font-size: 10px;
+    text-align: left;
+    color: rgb(163, 161, 161);
+}
+
+.alinhar-numero{
+    text-align: right;
+}
+
+.fonte-titulo-tabela{
+    font-size: 25px;
+    text-align: left;
+}
+
+.borda-divisao{
+    border-right: 1px solid lightgray;
+}
+
+.margin-escudo{
+    height: 24px;
+    border-right: 1px dotted lightgray;
+}
+
+.container-mosaico-times{
+    position: absolute;
+    display: none;
+    width: 220px;
+    height: 280px;
+    background-color: white;
+    box-shadow: black 1px 1px 1px 1px;
+    border: 8px;
+}
+.container-shield:hover .container-mosaico-times{
+    display: block;
+}
+
+.mosaico{
+    display: flex;
+}
+
+.mosaico div{
+    color: black;
+}
+
+tbody{
+    align-items: center;
+}
+
+.jogos{
+    display: flex;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.place-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.in-game{
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 60px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.playing-team {
+    align-items: center;
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+    
+.fonteEstadio{
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.fonteDia{
+    font-size: 14px;
+}
