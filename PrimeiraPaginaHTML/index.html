@@ -31,7 +31,7 @@
             </div>
             <div class="container6" style="width: 40%; margin-left: auto;">
                 <div class="item" style= "margin-left: auto;">
-                    Assine Já
+                    Assine JÃ¡
                 </div>
                 <div class="item" style="width: 20%;">
                     Conta Glogo
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div style="width: 70%;" class="fonte">
-                BRASILEIRÃO SÉRIE A
+                BRASILEIRÃƒO SÃ‰RIE A
             </div>
             <div class="barra-buscar">
                 <form>
@@ -77,7 +77,7 @@
         <div class="container4 color-white fonte2">
             <div class="navigacao_tabs" style="width: 10%;">classificado</div>
             <div class="navigacao_tabs" style="width: 7%;">simulador</div>
-            <div class="navigacao_tabs" style="width: 7%;">vídeos</div>
+            <div class="navigacao_tabs" style="width: 7%;">vÃ­deos</div>
             <div class="navigacao_tabs" style="width: 7%;">seja pro</div>
             <div class="navigacao_tabs" style="width: 5%;">VAR</div>
         </div>
@@ -89,7 +89,7 @@
                 <table style="width: 100%;" id="tabela">
                     <thead style="font-size: 12px;">
                         <th></th>
-                        <th>CLASSIFICAÇÃO</th>
+                        <th>CLASSIFICAÃ‡ÃƒO</th>
                         <th>P</th>
                         <th>J</th>
                         <th>V</th>
@@ -99,7 +99,7 @@
                         <th>GC</th>
                         <th>SG</th>
                         <th>%</th>
-                        <th>ÚLT.JOGOS</th>
+                        <th>ÃšLT.JOGOS</th>
                     </thead>
                     <tbody id="tbody">
                     
@@ -131,7 +131,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
-            window.onload = function(){  //função anônima pois não tem nome e vai ser atribuida á uma váriavel
+            window.onload = function(){  //funÃ§Ã£o anÃ´nima pois nÃ£o tem nome e vai ser atribuida Ã¡ uma vÃ¡riavel
                 $.ajax({   //Jquery se inicia com $
                     url: "https://api.api-futebol.com.br/v1/campeonatos/10/tabela",
                     headers: {"Authorization": "Bearer live_0fc9ed3ef7e2be7c4bef0cfdcff369"},
@@ -142,7 +142,7 @@
                         addTime(data);
                     },
                     error: function(error){
-                        alert("Deu erro na requisição: "+ error.toString());
+                        alert("Deu erro na requisiÃ§Ã£o: "+ error.toString());
                     }
                 })
                 
@@ -160,9 +160,9 @@
             }
 
         const mapResultadoUltimosJogosWidgets = {
-            'v': '<span style="color: green;">●</span>',
-            'e': '<span style="color: gray;">●</span>',
-            'd': '<span style="color: red;">●</span>'
+            'v': '<span style="color: green;">â—</span>',
+            'e': '<span style="color: gray;">â—</span>',
+            'd': '<span style="color: red;">â—</span>'
         };
 
         function addTime(data) {
@@ -209,7 +209,7 @@
                 var addGame = "<div class='game teans3'>" +
                                     "<div class='place-time'>" +
                                         "<div class='fonteEstadio'>"+ partidaInf.estadio.nome_popular +"</div>" +
-                                        "<strong class='fonteDia'>"+partidaInf.data_realizacao+"•"+partidaInf.hora_realizacao + "</strong>" +
+                                        "<strong class='fonteDia'>"+partidaInf.data_realizacao+" â€¢ "+partidaInf.hora_realizacao + "</strong>" +
                                     "</div>" +
                                     "<div class='in-game'>" +
                                         "<div class='playing-team'>" +
