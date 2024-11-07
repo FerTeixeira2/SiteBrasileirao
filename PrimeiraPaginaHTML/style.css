@@ -15,6 +15,11 @@ body {
     justify-content: flex-start;
     margin: auto;
 }
+
+.topoTela{
+    display: flex;
+}
+
 .color-red{
     color: red;
 }
@@ -34,9 +39,6 @@ body {
     color:black;
 }
 
-.container div{
-    width: 120px;
-}
 .color-faint-blue{
     color: aqua;
 }
@@ -56,6 +58,18 @@ body {
     border-color: unset;
 }
 
+.bsucar{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu2{
+    display: flex;
+}
+
 .container2{
     display:flex;
     text-align: center;
@@ -72,7 +86,7 @@ body {
     display: flex;
 }
 .contaner3 div{
-    width: 30%;
+    align-content: center;
 }
 .navigacao_tabs{
     color: white;
@@ -118,6 +132,7 @@ body {
 .fonte2 {
     font-size: 20px;
     font-family: sans-serif;
+    align-items: center;
 }
 .fonte3 {
     font-size: 15px;
@@ -301,3 +316,90 @@ tbody{
 .tamanhoPonto{
     font-size: 23px;
 }
+
+@media (max-width: 1100px) {
+    .container6{
+        display: none;
+    }
+
+    .contaner3 div {
+        width: 30%;
+        font-size: 15px;
+    }
+
+    .fonte2{
+        font-size: 15px;
+    }
+
+    table {
+      font-size: 14px;
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+    }
+}
+
+  @media (max-width: 940px){
+    .fonte2{
+        font-size: 17px;
+    }
+
+    .container4 {
+        display: flex;
+        text-align: center;
+        height: 60px;
+        background-color: rgb(77, 201, 77);
+        align-content: center;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .tabela1{
+        overflow: auto;
+    }
+
+    .buscar{
+        display: none;
+    }
+
+    .container-shield{
+        display: none;
+    }
+
+    .menu2{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .fonte{
+        font-size: 25px;
+    }
+    .fonte2{
+        font-size: 17px;
+    }
+
+    .tabela{
+        display: flex;
+        margin: auto;
+        width: 150%;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+
+    .tabela2{
+        width: 60%;
+    }
+
+    .container-shield{
+        display: none;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  
+  }
+  
