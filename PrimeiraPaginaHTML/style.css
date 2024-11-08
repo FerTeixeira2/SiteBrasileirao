@@ -216,6 +216,7 @@ th, td {
     text-align: center;
     display: flex;
     border-bottom: 1px solid lightgray;
+    height: 30px;
 }
 
 .fonte-th{
@@ -295,6 +296,7 @@ tbody{
     height: 60px;
     align-content: center;
     flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
 }
 
 .playing-team {

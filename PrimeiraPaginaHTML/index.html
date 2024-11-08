@@ -83,13 +83,11 @@
             <div class="navigacao_tabs">seja pro</div>
             <div class="navigacao_tabs">VAR</div>
         </div>
-        <br>
-        <br>
         <div class="tabela">
             <div style="width: 60%;" class="tabela1">
                 <h1 class="fonte-titulo-tabela">TABELA</h1>
                 <table style="width: 100%;" id="tabela">
-                    <thead style="font-size: 12px;">
+                    <thead style="font-size: 12px; height: 20px;">
                         <th></th>
                         <th>CLASSIFICAÇÃO</th>
                         <th>P</th>
@@ -111,23 +109,19 @@
             <div style="width: 3%;"></div>
             <div style="width: 2%;" class="borda-divisao"></div>
             <div style="width: 5%;"></div>
-            <div class="tabela2" id="jogos">
+            <div class="tabela2">
                 <h1 class="fonte-titulo-tabela" style="width: 100%;">JOGOS</h1>
                 <div class="teans3">
-                    <div></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="115" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="115" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                    </svg>
                     <div id="rodadas"></div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="115" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
                     </svg>
                 </div>
-                <br>
-                <div>   
-                    <div id="jogos">
+                <div id="jogos" style="width: 100%">
 
-                    </div>
                 </div>
             </div>
         </div>
@@ -208,12 +202,12 @@
 
             for (let partida = 0; partida < data.partidas.length; partida++) {
                 const partidaInf = data.partidas[partida];
-                var addGame = "<div class='game teans3'>" +
+                var addGame = "<div class='game'>" +
                                     "<div class='place-time'>" +
                                         "<div class='fonteEstadio'>"+ partidaInf.estadio.nome_popular +"</div>" +
                                         "<strong class='fonteDia'>"+partidaInf.data_realizacao+" • "+partidaInf.hora_realizacao + "</strong>" +
                                     "</div>" +
-                                    "<div class='in-game'>" +
+                                    "<div class='in-game' style='height: 70px;'>" +
                                         "<div class='playing-team'>" +
                                             "<div>"+partidaInf. time_mandante.sigla+"</div>" +
                                             "<img src="+partidaInf.time_mandante.escudo+" alt='sao-paulo' height='30' width='30'>" +
