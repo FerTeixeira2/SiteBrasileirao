@@ -1,1 +1,2 @@
-Trabalho do site do brasileirão quase concluido 
+Exercício: site do brasileirão, momntando somente o front em HTML e CSS. 
+Exercitar HTML E CSS 
